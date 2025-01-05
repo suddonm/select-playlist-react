@@ -7,8 +7,8 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" component={<LandingPage/>} />
-        <Route path="/submit" component={<SubmissionPage/>} />
+        <Route index element={<LandingPage/>} />
+        <Route path="/submit" element={<SubmissionPage/>} />
       </Routes>
     </Router>
   );

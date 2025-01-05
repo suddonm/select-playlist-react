@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './SongSubmissionForm.css'; // Custom CSS for styling
 
 const SongSubmissionForm = () => {
   const [formData, setFormData] = useState({
