@@ -1,12 +1,17 @@
-import React from "react";
-import SongSubmissionForm from "./components/SongSubmissionForm";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import LandingPage from './LandingPage';
+import SubmissionPage from './SongSubmissionForm'; // Your submission page component
 
-function App() {
+const App = () => {
   return (
-    <div style={{ backgroundColor: "#121212", minHeight: "100vh", padding: "20px" }}>
-      <SongSubmissionForm />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" component={<LandingPage/>} />
+        <Route path="/submit" component={<SubmissionPage/>} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
